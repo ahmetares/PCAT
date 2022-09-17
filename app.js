@@ -8,15 +8,6 @@ const path = require ('path')
 //MIDDLEWARE
 //app.use(express.static('public'))
 
-const myLogger = (req,res,next) => {
-  console.log('middleware log1 ')
-  next(); // next demessek bir sonraki middleware a gecemez (app.get)
-}
-
-app.use(myLogger)
-
-
-
 // app.get('/' , (req,res) =>{
 
 //     const photo = {
